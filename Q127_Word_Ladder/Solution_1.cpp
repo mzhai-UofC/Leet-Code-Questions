@@ -55,3 +55,6 @@ public:
         return 0;
     }
 };
+
+//TC: O(N*C^2) N stands for the length of wordList. C stands for the word length from the list
+//SC: O(N*C^2) N stands for the length of wordList. C stands for the word length from the list
