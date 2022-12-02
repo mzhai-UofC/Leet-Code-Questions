@@ -1,3 +1,5 @@
+//C++ SOLUTION
+
 class Solution_cpp {
 public:
     int titleToNumber(string columnTitle) {
@@ -11,3 +13,6 @@ public:
         return number;
     }
 };
+
+//TS:O(N)
+//SC:O(1)
