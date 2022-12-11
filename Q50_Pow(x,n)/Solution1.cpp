@@ -1,0 +1,15 @@
+class Solution1 {
+public:
+    double myPow(double x, int n) {
+        long long N =n;
+        return N>=0?quickMul(x,N):1.0/quickMul(x,-N);
+    }
+
+    double quickMul(double x, long long N){
+        if(N==0){return 1.0;}
+        double y=quickMul(x,N/2);
+        return N%2==0?y*y:y*y*x;
+    }
+};
+//TC:O(LOG N)
+//SC:O(LOG N) recursive fuction will use stack 
