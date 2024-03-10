@@ -1,0 +1,14 @@
+class Solution {
+public:
+    bool judgeSquareSum(int c) {
+        if (c<0) return false;
+        long long i = 0, j = sqrt(c);
+        while(i <= j){
+            long long powSum = i * i + j * j;
+            if(powSum == c) return true;
+            else if(powSum < c) i++;
+            else j--;
+        }
+        return false;
+    }
+};

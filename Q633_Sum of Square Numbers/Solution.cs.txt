@@ -1,0 +1,14 @@
+public class Solution {
+    public bool JudgeSquareSum(int c) {
+        if(c<0) return false;
+        var i= 0;
+        var j = (long)Math.Sqrt(c);
+        while(i<=j){
+            var powSum = i*i +j*j;
+            if(powSum == c) return true;
+            else if(powSum < c) i++;
+            else j--; 
+        }
+        return false;
+    }
+}
